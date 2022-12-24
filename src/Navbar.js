@@ -1,9 +1,12 @@
 import {Link, useMatch, useResolvedPath} from "react-router-dom"
 import linkedin from "./images/linkedin.png"
 import github from "./images/github.png"
+import {useScrollPosition} from "./hooks/useScrollPosition";
 
 export default function Navbar(){
-    return <nav className="nav">
+    const scrollPosition = useScrollPosition();
+
+    return <nav className= {scrollPosition > 0 ? "shadow" : "shadow-none"}>
         <Link to="/" className="site-title">Site name</Link>
         <ul>
             <CustomLink to="/" className="contentLink">Site name</CustomLink>

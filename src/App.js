@@ -4,21 +4,33 @@ import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import {Route, Routes} from "react-router-dom"
+import {Route, Routes} from "react-router-dom";
 
 function App() {
+    /*<Routes>
+        <Route path = "/" element = {<Home />} />
+        <Route path = "/about" element = {<About />} />
+        <Route path = "/projects" element = {<Projects />} />
 
+    </Routes>*/
   return (
       <div className="App">
       <>
           <Navbar/>
           <div className = "container">
-              <Routes>
-                  <Route path = "/" element = {<Home />} />
-                  <Route path = "/about" element = {<About />} />
-                  <Route path = "/projects" element = {<Projects />} />
+            <Home />
+          </div>
+      </>
 
-              </Routes>
+      <>
+          <div className = "container">
+            <About />
+          </div>
+      </>
+
+      <>
+          <div className = "container">
+              <Projects />
           </div>
       </>
 
@@ -41,3 +53,5 @@ function App() {
 }
 
 export default App;
+
+

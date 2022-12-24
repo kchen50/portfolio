@@ -1,12 +1,12 @@
 export default function Home(){
     return (
         <div className="home">
-            <body className="greeting">Hi! My name is</body>
+            <body className="greeting">Hello! My name is</body>
             <h1 className="name">
-                Kevin Chen.
+                I'm Kevin Chen
             </h1>
             <body className="text">
-                <bigger>I'm a student </bigger> at Rutgers University, pursuing a bachelors degree in computer science and mathematics .
+                A student pursuing a bachelors degree in computer science and mathematics at Rutgers University.
             </body>
 
         </div>
