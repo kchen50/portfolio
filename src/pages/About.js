@@ -1,3 +1,9 @@
 export default function About(){
-    return <h1 className="about">About</h1>
+    return (
+        <div className="about" id="about">
+            <rounded className="fadeInUp">
+                <h1>About</h1>
+            </rounded>
+        </div>
+    )
 }

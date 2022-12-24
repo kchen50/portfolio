@@ -1,6 +1,6 @@
 export default function Home(){
     return (
-        <div className="home">
+        <div id="" className="home">
             <body className="greeting">Hello! My name is</body>
             <h1 className="name">
                 I'm Kevin Chen

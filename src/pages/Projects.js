@@ -1,3 +1,9 @@
 export default function Projects(){
-    return <h1>Projects</h1>
+    return (
+        <div className="projects" id="projects">
+            <rounded className="fadeInUp">
+                <h1>Projects</h1>
+            </rounded>
+        </div>
+    )
 }

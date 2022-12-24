@@ -129,28 +129,48 @@ nav li:hover{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-
 }
 
 /* ABOUT */
 
 .about{
-    background-color: blue;
+    background-color: gray;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: stretch;
+    align-items: center;
     flex-direction: column;
 }
 
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
+
+/* PROJECTS */
+
+.projects{
+    background-color: powderblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: column;
 }
-.fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+
+
+/* IMPORTANT */
+
+html{
+    scroll-behavior: smooth;
+}
+
+rounded{
+    border-radius: 25px;
+    background: #21ad91;
+    padding: 20px;
+    width: 55%;
+    aspect-ratio: 1.618;
+    /*    height: calc(same-as-width/1.618);
+
+    width: 200px;
+    height: 150px;*/
 }

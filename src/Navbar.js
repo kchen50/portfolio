@@ -5,13 +5,18 @@ import {useScrollPosition} from "./hooks/useScrollPosition";
 
 export default function Navbar(){
     const scrollPosition = useScrollPosition();
+    /*
+            <Link to="#" className="site-title">Site name</Link>
 
-    return <nav className= {scrollPosition > 0 ? "shadow" : "shadow-none"}>
-        <Link to="/" className="site-title">Site name</Link>
-        <ul>
             <CustomLink to="/" className="contentLink">Site name</CustomLink>
             <CustomLink to = "/about" className = "contentLink">About</CustomLink>
             <CustomLink to = "/projects" className = "contentLink">Projects</CustomLink>
+     */
+    return <nav className= {scrollPosition > 0 ? "shadow" : "shadow-none"}>
+        <a href="#" className="site-title">Site name</a>
+        <ul>
+            <a href="#about" className="contentLink active">About</a>
+            <a href="#projects" className="contentLink">Projects</a>
             <a href = "https://github.com/kchen50">
                 <img src = {github} alt = "GitHub" className = "imgLink"/>
             </a>
