@@ -70,11 +70,17 @@ nav li.active{
     background-color: #555;
 }
 
+
 nav li:hover{
     background-color: #777;
 }
 
-.contentLink{
+a.activeNav{
+    background-color: #61dafb;
+    transition: .5s
+}
+
+a.contentLink{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -82,7 +88,12 @@ nav li:hover{
     gap: 1rem;
     font-size: 100%;
 }
-.imgLink{
+
+a.textLink{
+    border-radius: 5px;
+}
+
+img.imgLink{
     display: flex;
     justify-content: center;
     align-items: center;

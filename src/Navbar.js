@@ -5,6 +5,10 @@ import {useScrollPosition} from "./hooks/useScrollPosition";
 
 export default function Navbar(){
     const scrollPosition = useScrollPosition();
+    /*document.querySelectorAll("section").forEach((i) => {
+        console.log(i.offsetTop + " " + (i.offsetTop + i.offsetHeight) + " " + scrollPosition);
+    });*/
+
     /*
             <Link to="#" className="site-title">Site name</Link>
 
@@ -13,11 +17,11 @@ export default function Navbar(){
             <CustomLink to = "/projects" className = "contentLink">Projects</CustomLink>
      */
     return <nav className= {scrollPosition > 0 ? "shadow" : "shadow-none"}>
-        <a href="#" className="site-title">Site name</a>
+        <a href="#" className="textLink site-title">Site name</a>
         <ul>
-            <a href="#about" className="contentLink active">About</a>
-            <a href="#projects" className="contentLink">Projects</a>
-            <a href = "https://github.com/kchen50">
+            <a href="#about" className="textLink contentLink">About</a>
+            <a href="#projects" className="textLink contentLink">Projects</a>
+            <a href="https://github.com/kchen50">
                 <img src = {github} alt = "GitHub" className = "imgLink"/>
             </a>
             <a href = "https://www.linkedin.com/in/kevin-chen-08a576215/">

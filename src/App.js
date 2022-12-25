@@ -11,22 +11,21 @@ import "./animations.css";
 function App() {
     window.addEventListener("scroll", reveal);
 
-    let section = document.querySelectorAll("section");
-    let links = document.querySelectorAll(".contentLink");
-
     window.onscroll = () => {
+        //console.log("onscroll triggered");
+        //console.log(section);
+        let section = document.querySelectorAll("section");
+        let links = document.querySelectorAll(".contentLink");
+
         section.forEach((i) => {
             let top = window.scrollY;
             let offset = i.offsetTop - 150;
             let height = i.offsetHeight;
             let id = i.getAttribute("id");
-
-            if (top >= offset && top < offset + height) {
+            if (top >= offset && top < offset + height) {  // if top (scroll height) is in the y-range of {id}
                 links.forEach((link) => {
-                    link.classList.remove("active");
-                    document
-                        .querySelector(".contentLink[href*=" + id + "]")
-                        .classList.add("active");
+                    link.classList.remove("activeNav"); // remove previous activeNav
+                    document.querySelector(".contentLink[href*=" + id + "]").classList.add("activeNav");
                 });
             }
         });
