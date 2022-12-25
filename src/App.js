@@ -10,6 +10,28 @@ import "./animations.css";
 
 function App() {
     window.addEventListener("scroll", reveal);
+
+    let section = document.querySelectorAll("section");
+    let links = document.querySelectorAll(".contentLink");
+
+    window.onscroll = () => {
+        section.forEach((i) => {
+            let top = window.scrollY;
+            let offset = i.offsetTop - 150;
+            let height = i.offsetHeight;
+            let id = i.getAttribute("id");
+
+            if (top >= offset && top < offset + height) {
+                links.forEach((link) => {
+                    link.classList.remove("active");
+                    document
+                        .querySelector(".contentLink[href*=" + id + "]")
+                        .classList.add("active");
+                });
+            }
+        });
+    };
+
     /*<Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/about" element = {<About />} />
