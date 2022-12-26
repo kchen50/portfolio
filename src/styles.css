@@ -16,7 +16,7 @@ h1{
     text-align: center;
     justify-content: center;
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 64px);
 }
 .shadow {
     transition: .2s;
@@ -37,6 +37,7 @@ nav{
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    height: 4rem;
 
     color: black;
     position: fixed;
@@ -64,34 +65,52 @@ nav a{
     align-items: center;
 }
 
-nav li.active{
+/*nav li.active{
     background-color: #555;
 }
 
 
 nav li:hover{
     background-color: #777;
+}*/
+
+.link-padding{
+    letter-spacing: .5px;
+    border-radius: 5px;
+    padding: 8px 4px;
+    margin: 4px;
 }
 
-a.activeNav{
+.link-padding.active-nav{
     background-color: #61dafb;
-    transition: .5s;
+    transition: .3s;
 }
 
-a.contentLink{
-    padding: 0;
-    margin: 0;
+a.text-link{
+    position: relative;
+    text-decoration: none;
     list-style: none;
     display: flex;
     gap: 1rem;
     font-size: 100%;
 }
 
-a.textLink{
-    border-radius: 5px;
-    padding: 8px 4px;
-    margin: 4px;
-    letter-spacing: .5px
+a.text-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.text-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 img.imgLink{
@@ -117,7 +136,7 @@ img.imgLink{
 
 .name{
     text-align: center;
-    font-size: 600%;
+    font-size: 9vh;
     /*padding-left: 20%;
     padding-right: 20%;*/
     margin-top: 0;
@@ -145,31 +164,41 @@ img.imgLink{
 
 .intro{
     width: 66%;
-    aspect-ratio: 1.618;
-    background-color: blueviolet;
+    /*aspect-ratio: 1.618;
+    background-color: green;*/
     justify-content: center;
-    align-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .picture{
-    background-color: green;
+    /*background-color: green;*/
     width: 34%;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
 
-.introBubble{
-    /*background-color: red;*/
+.picture-bubble{
+    height: 66%;
+    width: 66%;
+    border-radius: 20px;
+    background-color: gold;
+}
+
+.intro-bubble{
     height: 80%;
     width: 80%;
+    position: relative;
+    left: 5%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
 
-.introContact{
+.intro-contact{
     /*background-color:pink;*/
     padding: 2rem 0;
     display: flex;
@@ -204,6 +233,10 @@ img.imgLink{
 
 
 /* IMPORTANT */
+
+.content{
+    margin-top: 4rem;
+}
 
 html{
     scroll-behavior: smooth;

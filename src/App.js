@@ -15,7 +15,7 @@ function App() {
         //console.log("onscroll triggered");
         //console.log(section);
         let section = document.querySelectorAll("section");
-        let links = document.querySelectorAll(".contentLink");
+        let links = document.querySelectorAll(".link-padding");
 
         section.forEach((i) => {
             let top = window.scrollY;
@@ -24,8 +24,11 @@ function App() {
             let id = i.getAttribute("id");
             if (top >= offset && top < offset + height) {  // if top (scroll height) is in the y-range of {id}
                 links.forEach((link) => {
-                    link.classList.remove("activeNav"); // remove previous activeNav
-                    document.querySelector(".textLink[href*=" + id + "]").classList.add("activeNav");
+                    link.classList.remove("active-nav"); // remove previous activeNav
+                    /*console.log(link);
+                    console.log(id);
+                    console.log("asdf" + document.querySelector(".link-padding[href*=" + id + "]"));*/
+                    document.querySelector(".link-padding[class*=" + id + "]").classList.add("active-nav");
                 });
             }
         });
@@ -40,7 +43,7 @@ function App() {
   return (
       <div className="App">
           <Navbar/>
-
+          <div className="content">
           <>
               <div className = "container">
                   <Home />
@@ -58,6 +61,7 @@ function App() {
                   <Projects />
               </div>
           </>
+          </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -16,12 +16,18 @@ export default function Navbar(){
      */
     return <nav className= {scrollPosition > 0 ? "shadow" : "shadow-none"}>
         <ul>
-            <a href="#" className="textLink contentLink site-title">Kevin Chen</a>
+            <a href="#" className="text-link site-title">Kevin Chen</a>
         </ul>
         <ul>
-            <a href="#about" className="textLink contentLink">About</a>
-            <a href="#projects" className="textLink contentLink">Projects</a>
-            <a href="#contact" className="textLink contentLink">Contact</a>
+            <div className="link-padding about-link">
+                <a href="#about" className="text-link">About</a>
+            </div>
+            <div className="link-padding projects-link">
+                <a href="#projects" className="text-link">Projects</a>
+            </div>
+            <div className="link-padding contact-link">
+                <a href="#contact" className="text-link">Contact</a>
+            </div>
         </ul>
     </nav>
 }

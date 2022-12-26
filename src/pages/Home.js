@@ -5,14 +5,14 @@ export default function Home(){
     return (
         <section id="" className="home">
             <div className="intro">
-                <div className="introBubble">
+                <div className="intro-bubble">
                     <h1 className="name">
                         Hey, I'm Kevin 👋
                     </h1>
                     <body className="text">
                         I'm a student at Rutgers University pursuing a bachelors degree in computer science and mathematics.
                     </body>
-                    <div className="introContact">
+                    <div className="intro-contact">
                         <a href = "https://www.linkedin.com/in/kevin-chen-08a576215/">
                             <img src = {linkedin} alt = "LinkedIn" className = "imgLink"/>
                         </a>
@@ -24,7 +24,9 @@ export default function Home(){
 
             </div>
             <div className="picture">
+                <div className="picture-bubble">
 
+                </div>
             </div>
         </section>
         /*<section id="" className="home">
