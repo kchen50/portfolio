@@ -25,7 +25,7 @@ function App() {
             if (top >= offset && top < offset + height) {  // if top (scroll height) is in the y-range of {id}
                 links.forEach((link) => {
                     link.classList.remove("activeNav"); // remove previous activeNav
-                    document.querySelector(".contentLink[href*=" + id + "]").classList.add("activeNav");
+                    document.querySelector(".textLink[href*=" + id + "]").classList.add("activeNav");
                 });
             }
         });
