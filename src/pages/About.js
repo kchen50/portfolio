@@ -4,6 +4,14 @@ export default function About(){
             <rounded className="fadeInUp">
                 <h1>About</h1>
             </rounded>
+            <div className="about-sidebar">
+                <div className="about-skills">
+
+                </div>
+                <div className="about-resume">
+
+                </div>
+            </div>
         </section>
     )
 }
