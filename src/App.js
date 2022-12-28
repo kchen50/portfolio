@@ -51,7 +51,7 @@ function App() {
           </>
 
           <>
-              <div className = "container">
+              <div className = "half-container">
                   <About />
               </div>
           </>

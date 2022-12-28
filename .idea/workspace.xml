@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b47a134-04ac-441b-acb0-50fdb1f2d568" name="Changes" comment="added hover underline animation to navbar; reworked how active navbar option is highlighted">
+    <list default="true" id="6b47a134-04ac-441b-acb0-50fdb1f2d568" name="Changes" comment="started to implement structure; will work on website accessibility later on">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
@@ -72,7 +73,8 @@
       <workItem from="1671897374514" duration="12903000" />
       <workItem from="1671940279289" duration="90000" />
       <workItem from="1671940967433" duration="15541000" />
-      <workItem from="1672077801375" duration="14329000" />
+      <workItem from="1672077801375" duration="14535000" />
+      <workItem from="1672174657028" duration="8968000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1671814043000</created>
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672087669925</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="started to implement structure; will work on website accessibility later on">
+      <created>1672102307756</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672102307756</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +171,7 @@
     <MESSAGE value="no changes made" />
     <MESSAGE value="currently implementing website structure" />
     <MESSAGE value="added hover underline animation to navbar; reworked how active navbar option is highlighted" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hover underline animation to navbar; reworked how active navbar option is highlighted" />
+    <MESSAGE value="started to implement structure; will work on website accessibility later on" />
+    <option name="LAST_COMMIT_MESSAGE" value="started to implement structure; will work on website accessibility later on" />
   </component>
 </project>

@@ -1,12 +1,18 @@
 export default function Projects(){
+    /*
+    <rounded className="fadeInUp">
+
+    </rounded>
+    <div className="projects-selector">
+
+    </div>
+    */
+
     return (
         <section className="projects" id="projects">
-            <div className="projects-selector">
+            <h1 className="projects-heading">Projects</h1>
 
-            </div>
-            <rounded className="fadeInUp">
-                <h1>Projects</h1>
-            </rounded>
+
         </section>
     )
 }

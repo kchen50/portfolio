@@ -4,11 +4,19 @@
 
 body{
     margin: 0;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", sans-serif;/*Baskerville, "Baskerville Old Face", "Times New Roman", serif;*/
+    /*font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", sans-serif;/*Baskerville, "Baskerville Old Face", "Times New Roman", serif;*/
 }
 
 h1{
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+.half-container{
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: calc(50vh - 64px);
 }
 
 .container{
@@ -131,7 +139,7 @@ img.imgLink{
     padding-right: 0%;*/
     padding-bottom: 0;
     justify-content: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", sans-serif;
+    font-family: "Helvetica Neue", "Trebuchet MS", "Lucida Grande", "Lucida Sans", sans-serif;
 }
 
 .name{
@@ -209,15 +217,73 @@ img.imgLink{
 /* ABOUT */
 
 .about{
-    background-color: gray;
+    background-color: lightgray;
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: stretch;
     align-items: center;
     flex-direction: row;
+
 }
 
+.about-image{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.about-info{
+    border-radius: 25px;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    /*background-color: yellow;*/
+    width: 50%;
+
+}
+
+.about-heading{
+    text-align: left;
+    margin-top: 0;
+}
+
+.about-text{
+    text-align: left;
+    font-size: x-large;
+}
+
+.about-resume{
+    font-size: x-large;
+    text-align: left;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: gold;
+    width: fit-content;
+
+}
+
+/*
+.about-skills{
+    border-radius: 25px;
+    background-color: orange;
+}
+
+.about-resume{
+    border-radius: 25px;
+    background-color: orangered;
+}*/
+/*.about-sidebar{
+    grid-column: 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .about-sidebar{
     height: 100%;
     width: 20%;
@@ -225,13 +291,12 @@ img.imgLink{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}*/
 
-.about-skills{
+/*.about-skills{
     background-color: orange;
     border-radius: 25px;
     width: 30vh;
-    margin-bottom: 4.37vh;
     aspect-ratio: 1/1.618;
 }
 
@@ -240,7 +305,8 @@ img.imgLink{
     border-radius: 25px;
     width: 30vh;
     aspect-ratio: 1.618;
-}
+}*/
+
 /* PROJECTS */
 
 .projects{
@@ -253,11 +319,18 @@ img.imgLink{
     flex-direction: row;
 }
 
-.projects-selector{
+.projects-heading{
+    text-align: left;
+    align-self: start;
+    width: 100%;
+    margin: 5% 10%;
+}
+
+/*.projects-selector{
     background-color: orange;
     width: 21%;
     aspect-ratio: 1/1.618;
-}
+}*/
 
 /* IMPORTANT */
 
